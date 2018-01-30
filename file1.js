@@ -1,8 +1,12 @@
 var http = require('http');
+var server = http.createServer(engine);
 
-http.createServer(engine).listen(4000);
+
+server.listen(4000, function () {
+    console.log('This function applied when the server hit')
+});
 
 function engine(request, response) {
     response.writeHead(200, {'Content-Type': 'text/pain'});
-    response.end('Hello From The Server Side');
+    response.end(request.url);
 }
