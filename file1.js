@@ -1,6 +1,8 @@
-var data = require('./file2');
+var http = require('http');
 
-data.myData.firstMethod(1,2);
-data.myData.secondMethod(1,2);
+http.createServer(engine).listen(4000);
 
-console.log(data.newVar);
+function engine(request, response) {
+    response.writeHead(200, {'Content-Type': 'text/pain'});
+    response.end('Hello From The Server Side');
+}
