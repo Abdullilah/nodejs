@@ -1,5 +1,5 @@
 var data1 = require('./dataSet');
 
-data1.data.myVar = 'New Value from Req1';
+data1.data.newVar = 'Change It From Req1';
 
-console.log(data1.data.myVar);
+console.log(data1.data.newVar);

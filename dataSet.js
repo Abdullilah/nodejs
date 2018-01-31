@@ -1,5 +1,5 @@
-var data = {};
+var myData = {};
 
-data.myVar = 'This is the first value';
+myData.newVar = 'This is Old Value';
 
-exports.data = data;
+exports.data = myData;

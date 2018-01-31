@@ -1,6 +1,6 @@
-function myFun() {
+var myFun = function () {
     return {
-        myVar : 'This is the first value'
+        newVar: 'This is Old Value'
     }
 }
 

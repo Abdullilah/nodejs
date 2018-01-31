@@ -1,7 +1,7 @@
 var data3 = require('./dataSet1');
 
-var newObjData = new data3();
+var myData = new data3();
 
-newObjData.myVar = 'New Value from Req3'
+myData.newVar = 'Changed It From Req3';
 
-console.log(newObjData.myVar);
+console.log(myData.newVar);
