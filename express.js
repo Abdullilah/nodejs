@@ -1,14 +1,12 @@
 var express = require('express');
+var path = require('path');
 var app = express();
-
-console.log(__dirname);
 
 // access file from the server
 app.use('/myfiles', express.static(__dirname + '/files'));
 
-// apply function when reach the route
-app.get('/newRoute', function (request, response) {
-    response.send('Hello from Express');
+app.get('/', function (request, response) {
+    response.sendFile('index.html', {root: path.join(__dirname + '/files')});
 });
 
 // listen to the port
