@@ -15,6 +15,10 @@ app.get('/', function (request, response) {
     response.sendFile('index.html', {root: path.join(__dirname + '/files')});
 });
 
+app.get('/about', function (request, response) {
+    response.end('Hello ' + request.query.myInput);
+});
+
 app.post('/', function (request, response) {
     // npm install body-parser --save
     console.log(request.body);
