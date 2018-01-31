@@ -17,8 +17,8 @@
       <file leaf-file-name="fs.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -51,6 +51,7 @@
         <option value="$PROJECT_DIR$/req3.js" />
         <option value="$PROJECT_DIR$/files/file" />
         <option value="$PROJECT_DIR$/fs.js" />
+        <option value="$PROJECT_DIR$/files/file1" />
       </list>
     </option>
   </component>
@@ -100,6 +101,11 @@
               <item name="nodejs" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodejs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -138,12 +144,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517350481946</updated>
-      <workItem from="1517350485904" duration="6618000" />
+      <workItem from="1517350485904" duration="7380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6618000" />
+    <option name="totallyTimeSpent" value="7380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -258,10 +264,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/files/file1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>

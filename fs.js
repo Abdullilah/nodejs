@@ -2,11 +2,11 @@ var fs = require('fs');
 
 console.log('Before');
 
-// fs.readFile('./files/file', 'utf8', function (error, data) {
-//     console.log(data);
+// fs.writeFile('./files/file1', 'The Is The New Text','utf8', function (error) {
+//     if(error) throw error;
+//     console.log('From inside');
 // });
 
-var data = fs.readFileSync('./files/file', 'utf8');
-console.log(data)
+fs.writeFileSync('./files/file1', 'The New Text', 'utf8');
 
 console.log('After');
