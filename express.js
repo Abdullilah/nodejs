@@ -3,24 +3,22 @@ var path = require('path');
 var fs = require('fs');
 var app = express();
 
+// To get data from POST method (middleware)
+var bodyParser = require('body-parser');
+app.use(bodyParser());
 
 // access file from the server
 app.use('/myfiles', express.static(__dirname + '/files'));
+
 
 app.get('/', function (request, response) {
     response.sendFile('index.html', {root: path.join(__dirname + '/files')});
 });
 
-app.get(/^(.+$)/, function (req, res) {
-    try{
-        if(fs.statSync(path.join(__dirname + '/files' , req.params[0]+'.html')).isFile()){
-            res.sendFile(req.params[0]+'.html', {root: path.join(__dirname + '/files')})
-        }
-    } catch (error){
-        console.log(error);
-        res.sendFile('404page.html', {root: path.join(__dirname + '/files')})
-    }
-
+app.post('/', function (request, response) {
+    // npm install body-parser --save
+    console.log(request.body);
+    response.end('Hello ' + request.body.myInput);
 });
 
 // listen to the port
